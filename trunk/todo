@@ -1,0 +1,18 @@
+real error handling
+XHTML support
+split listings across multiple pages
+allow individual time zone for users
+online/offline status indicators beneath usernames
+topic subscription
+email and Jabber topic notification
+RSS feeds for latest posts/topics
+word censoring
+gzip output compression
+show/hide email option for each user
+database backup facility
+version checker
+user signatures
+hyperlinks for last post in topics
+flood protection
+ban area in admin panel: usernames, email addresses, IP ranges, hostnames
+topic listings filter controls (sort by etc)

@@ -1,0 +1,13 @@
+Monkey Boards 0.4
+
+Requirements
+
+* Web server
+* PHP version 5.0.0 or later
+* SQLite support enabled in PHP
+
+Installation
+
+1. Copy everything in /upload to a directory on your web server.
+2. Browse to it with your web browser, e.g. http://mydomain.com/monkeyboards/.
+3. You should see the "Monkey Boards Installation" page. Follow the instructions.
