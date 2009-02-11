@@ -1,44 +1,29 @@
 <?php
 
+/**
+ * Monkey Boards
+ * /install.php
+ * Perform initial installation of database schema and ensure config is good
+ * 
+ * @version 1.0
+ * @author Jamie Hurst
+ */
+
+// Require standard config file
 include('include/config.inc.php');
-if(file_exists($database)) {
-	header('Location: ./index.php');
-	exit;
-}
 
-$schema = "CREATE TABLE categories ( id INTEGER PRIMARY KEY, name TEXT(50) NOT NULL );
-CREATE TABLE forums ( id TEXT(50) NOT NULL, category INTEGER NOT NULL, name TEXT(50) NOT NULL, blurb VARCHAR(100) NOT NULL );
-CREATE TABLE emoticons (id INTEGER PRIMARY KEY, image VARCHAR NOT NULL, pattern VARCHAR UNIQUE, title TEXT);
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/smile.png', ':-)', 'smile');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/frown.png', ':-(', 'frown');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/grin.png', ':-D', 'grin');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/cry.png', ';-(', 'cry');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/wink.png', ';-)', 'wink');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/tongue.png', ':-p', 'tongue');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/surprised.png', ':-o', 'surprised');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/cool.png', '8-)', 'cool');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/undecided.png', ':-/', 'undecided');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/embarassed.png', ':-$', 'embarassed');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/smile.png', ':)', 'smile');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/frown.png', ':(', 'frown');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/grin.png', ':D', 'grin');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/cry.png', ';(', 'cry');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/wink.png', ';)', 'wink');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/tongue.png', ':p', 'tongue');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/surprised.png', ':o', 'surprised');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/cool.png', '8)', 'cool');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/undecided.png', ':/', 'undecided');
-INSERT INTO emoticons VALUES (NULL, 'include/emoticons/embarassed.png', ':$', 'embarassed');
-CREATE TABLE posts (id INTEGER NOT NULL PRIMARY KEY, topic INTEGER NOT NULL, username VARCHAR(50) NOT NULL, timestamp TIMESTAMP(10) NOT NULL, message VARCHAR NOT NULL);
-CREATE TABLE settings (id TEXT NOT NULL PRIMARY KEY, value VARCHAR NOT NULL, preserve BOOLEAN NOT NULL);
-INSERT INTO settings VALUES ('email_from', 'nobody@nowhere.com', 0);
-INSERT INTO settings VALUES ('date_format', 'Y-m-d H:i:s', 0);
-INSERT INTO settings VALUES ('style', 'default', 0);
-CREATE TABLE topics ( id INTEGER NOT NULL PRIMARY KEY, forum TEXT(50) NOT NULL, subject VARCHAR(70) NOT NULL, views INTEGER NOT NULL DEFAULT '0', locked BOOLEAN NOT NULL DEFAULT '0', sticky BOOLEAN NOT NULL DEFAULT '0' );
-CREATE TABLE users ( username VARCHAR(50) NOT NULL PRIMARY KEY, password BLOB(40) NOT NULL, email VARCHAR(300) NOT NULL, type INTEGER(1) DEFAULT '1', disabled BOOLEAN(1) DEFAULT '0', registered TIMESTAMP(10) NOT NULL, name TEXT(100));";
+// If we have a databae, relocate back to index
+if(file_exists($database))
+	header('Location: ./');
 
+$schema = file_get_contents('includes/install.sql');
+if(!$schema)
+	die('Could not find schema installation file, please re-download Monkey Boards.');
+
+// Require standard start file
 require('include/start.inc.php');
 
+// Check through some PHP environment variables to make sure we have the required settings
 $phpversion = phpversion();
 $compatible = version_compare($phpversion, "5.0.0");
 $magic_quotes = get_magic_quotes_gpc();
