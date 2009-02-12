@@ -31,5 +31,3 @@ foreach($smilies as $key => $smiley) {
 // Display template
 $tpl->assign('smilies', $smilies);
 $tpl->display("help.tpl");
-
-?>

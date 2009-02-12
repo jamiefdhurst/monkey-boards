@@ -92,5 +92,3 @@ $tpl->assign('forum', $forum);
 $tpl->assign('normal_topics', $normal_topics);
 $tpl->assign('sticky_topics', $sticky_topics);
 $tpl->display("forum.tpl");
-
-?>
