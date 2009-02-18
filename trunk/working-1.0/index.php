@@ -62,4 +62,4 @@ $site_info = site_info();
 $tpl->assign('categories_count', $categories_count);
 $tpl->assign('forums', $categories);
 $tpl->assign('site_info', $site_info);
-$tpl->display("index.tpl");
+$tpl->display('index.tpl');

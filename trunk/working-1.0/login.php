@@ -101,4 +101,4 @@ if(!empty($v_username) and !empty($v_password)) {
 }
 
 // Display login template
-$tpl->display("login.tpl");
+$tpl->display('login.tpl');

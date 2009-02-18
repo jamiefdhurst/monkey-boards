@@ -79,4 +79,4 @@ if(!empty($v_username) and !empty($v_email)) {
 }
 
 // Display registration template
-$tpl->display("register.tpl");
+$tpl->display('register.tpl');

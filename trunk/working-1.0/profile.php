@@ -61,4 +61,4 @@ $user = sqlite_fetch_array($query);
 
 // Assign values and display template
 $tpl->assign('user', $user);
-$tpl->display("profile.tpl");
+$tpl->display('profile.tpl');

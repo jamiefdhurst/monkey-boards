@@ -13,6 +13,6 @@
 require('include/start.inc.php');
 
 // Display rules template
-$tpl->display("rules.tpl");
+$tpl->display('rules.tpl');
 
 ?>

@@ -141,4 +141,4 @@ if(!empty($v_database)) {
 
 // Assign template settings and display
 $tpl->assign('style', 'default');
-$tpl->display("install.tpl");
+$tpl->display('install.tpl');

@@ -84,4 +84,4 @@ if(!empty($v_subject) and !empty($v_topic) and !empty($v_post) and !empty($v_mes
 // Sort out and display the template
 $tpl->assign('post', $post);
 $tpl->assign('topic', $topic);
-$tpl->display("edit.tpl");
+$tpl->display('edit.tpl');

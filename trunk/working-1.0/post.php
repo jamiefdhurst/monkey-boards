@@ -97,7 +97,7 @@ switch($v_mode) {
 		// << Again, error problem. >>
 		if(!forum_exists($v_forum))
 			header('Location : ./');
-
+		
 		// XML parse input to test validity
 		$parser = xml_parser_create();
 		$xml = xml_parse($parser, '<begin>' . $v_message . '</begin>', true);
@@ -167,7 +167,7 @@ switch($v_mode) {
 		// If topic is locked, redirect back, posting is disallowed
 		if($locked == '1')
 			header('Location: topic.php?id=' . $v_topic);
-	
+		
 		// XML parse input to check validity
 		$parser = xml_parser_create();
 		$xml = xml_parse($parser, $v_message, true);
