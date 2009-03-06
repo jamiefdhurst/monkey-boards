@@ -2,8 +2,8 @@
 
 /**
  * Monkey Boards
- * /admin/categories.php
- * Manage forum categories
+ * /admin/forums.php
+ * Manage forums
  * 
  * @version 1.0
  * @author Jamie Hurst
