@@ -1,3 +1,12 @@
+/*
+ * Monkey Boards
+ * /include/install.sql
+ * Standard installation schema
+ * 
+ * @version 1.0
+ * @author Jamie Hurst
+ */
+
 CREATE TABLE `categories` (
 	`id` INTEGER PRIMARY KEY,
 	`name` TEXT(50) NOT NULL
