@@ -5,6 +5,7 @@
  * /profile.php
  * Display profile and handle
  * 
+ * @package MonkeyBoards/main
  * @version 1.0
  * @author Jamie Hurst
  */

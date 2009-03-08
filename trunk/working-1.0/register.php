@@ -5,6 +5,7 @@
  * /register.php
  * Register a new user on the forums
  * 
+ * @package MonkeyBoards/main
  * @version 1.0
  * @author Jamie Hurst
  */

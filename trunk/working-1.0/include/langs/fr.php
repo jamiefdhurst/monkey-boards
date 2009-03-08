@@ -5,6 +5,7 @@
  * /include/langs/fr.php
  * Language file - French
  * 
+ * @package MonkeyBoards/include/lang
  * @version 1.0
  * @author Jamie Hurst
  */

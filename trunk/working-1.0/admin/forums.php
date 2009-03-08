@@ -5,6 +5,7 @@
  * /admin/forums.php
  * Manage forums
  * 
+ * @package MonkeyBoards/admin
  * @version 1.0
  * @author Jamie Hurst
  */

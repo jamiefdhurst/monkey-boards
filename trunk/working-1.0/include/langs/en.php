@@ -5,6 +5,7 @@
  * /include/langs/en.php
  * Language file - English (British)
  *
+ * @package MonkeyBoards/include/lang
  * @version 1.0
  * @author Jamie Hurst
  */

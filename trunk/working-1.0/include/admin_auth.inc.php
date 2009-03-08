@@ -5,6 +5,7 @@
  * /include/admin_auth.inc.php
  * Check admin authentication
  * 
+ * @package MonkeyBoards/include
  * @version 1.0
  * @author Jamie Hurst
  */

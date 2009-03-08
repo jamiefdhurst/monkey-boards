@@ -5,6 +5,7 @@
  * /user.php
  * View a user's profile
  * 
+ * @package MonkeyBoards/main
  * @version 1.0
  * @author Jamie Hurst
  */

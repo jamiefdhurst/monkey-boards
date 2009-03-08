@@ -5,6 +5,7 @@
  * /admin/categories.php
  * Manage forum categories
  * 
+ * @package MonkeyBoards/admin
  * @version 1.0
  * @author Jamie Hurst
  */

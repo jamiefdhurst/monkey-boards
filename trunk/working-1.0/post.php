@@ -5,6 +5,7 @@
  * /post.php
  * Either post a reply or topic
  * 
+ * @package MonkeyBoards
  * @version 1.0
  * @author Jamie Hurst
  */

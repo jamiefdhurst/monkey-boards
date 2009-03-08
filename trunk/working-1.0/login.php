@@ -5,6 +5,7 @@
  * /login.php
  * Perform user login
  * 
+ * @package MonkeyBoards
  * @version 1.0
  * @author Jamie Hurst
  */

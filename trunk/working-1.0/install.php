@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * Monkey Boards
+ * /install.php
+ * Perform initial installation
+ * 
+ * @package MonkeyBoards
+ * @version 1.0
+ * @author Jamie Hurst
+ */
+
 // Require standard config file
 include('include/config.inc.php');
 

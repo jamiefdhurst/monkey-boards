@@ -3,6 +3,7 @@
  * /include/install.sql
  * Standard installation schema
  * 
+ * @package MonkeyBoards/include
  * @version 1.0
  * @author Jamie Hurst
  */

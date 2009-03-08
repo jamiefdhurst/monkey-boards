@@ -5,6 +5,7 @@
  * /edit.php
  * Edit a specific post
  * 
+ * @package MonkeyBoards
  * @version 1.0
  * @author Jamie Hurst
  */

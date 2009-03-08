@@ -5,6 +5,7 @@
  * /userlist.php
  * Display list of all forum users
  * 
+ * @package MonkeyBoards/main
  * @version 1.0
  * @author Jamie Hurst
  */

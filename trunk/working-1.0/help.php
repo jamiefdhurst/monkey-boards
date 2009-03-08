@@ -5,6 +5,7 @@
  * /help.php
  * Display forum-based help
  * 
+ * @package MonkeyBoards
  * @version 1.0
  * @author Jamie Hurst
  */

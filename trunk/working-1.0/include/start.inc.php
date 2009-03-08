@@ -5,6 +5,7 @@
  * /include/start.inc.php
  * Default include file
  * 
+ * @package MonkeyBoards/include
  * @version 1.0
  * @author Jamie Hurst
  */

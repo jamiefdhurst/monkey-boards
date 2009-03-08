@@ -5,6 +5,7 @@
  * /search.php
  * Perform search on forum topics and posts
  * 
+ * @package MonkeyBoards/main
  * @version 1.0
  * @author Jamie Hurst
  */

@@ -5,6 +5,7 @@
  * /index.php
  * Main page, display all categories and forums
  * 
+ * @package MonkeyBoards/main
  * @version 1.0
  * @author Jamie Hurst
  */

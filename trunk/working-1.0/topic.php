@@ -5,6 +5,7 @@
  * /topic.php
  * Read a topic and it's posts
  * 
+ * @package MonkeyBoards/main
  * @version 1.0
  * @author Jamie Hurst
  */

@@ -5,6 +5,7 @@
  * /moderate.php
  * Perform post and topic moderation
  * 
+ * @package MonkeyBoards
  * @version 1.0
  * @author Jamie Hurst
  */

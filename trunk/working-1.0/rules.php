@@ -5,6 +5,7 @@
  * /rules.php
  * Display forum rules
  * 
+ * @package MonkeyBoards/main
  * @version 1.0
  * @author Jamie Hurst
  */

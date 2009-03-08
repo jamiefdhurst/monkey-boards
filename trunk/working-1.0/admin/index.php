@@ -5,6 +5,7 @@
  * /admin/index.php
  * Admin Main Page
  * 
+ * @package MonkeyBoards/admin
  * @version 1.0
  * @author Jamie Hurst
  */
