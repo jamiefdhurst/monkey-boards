@@ -5,7 +5,7 @@
  * /forum.php
  * Display the contents of a forum
  * 
- * @package MonkeyBoards
+ * @package MonkeyBoards/main
  * @version 1.0
  * @author Jamie Hurst
  */

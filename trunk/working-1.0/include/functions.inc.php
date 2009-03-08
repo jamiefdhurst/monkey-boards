@@ -24,7 +24,7 @@ function db_open() {
 
 /**
  * Count the current number of topics for a given forum
- * @global mixed $db Database connection handle
+ * @global mixed Database connection
  * @param string $forum_name Forum name
  * @return int|boolean Number of topics
  */
@@ -46,7 +46,7 @@ function count_topics($forum_name) {
 
 /**
  * Count the number of posts for a given forum
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $forum_name Forum's name
  * @return int|boolean Number of posts
  */
@@ -78,7 +78,7 @@ function count_posts($forum_name) {
 
 /**
  * Find out the last post from a forum
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $forum_name Forum's name
  * @return mixed Last post details
  */
@@ -110,7 +110,7 @@ function forum_last_post($forum_name) {
 
 /**
  * Get a user's last post
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $username Username
  * @return mixed Last post details
  */
@@ -132,7 +132,7 @@ function user_last_post($username) {
 
 /**
  * Test a forum's existance
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $forum_name Name of forum
  * @return boolean Forum exists or not
  */
@@ -153,7 +153,7 @@ function forum_exists($forum_name) {
 
 /**
  * Test a topic's existance
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $id Topic ID
  * @return boolean Topic exists or not
  */
@@ -175,7 +175,7 @@ function topic_exists($id) {
 
 /**
  * Test if a user is valid
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $username Username
  * @param string $password Password
  * @return boolean user is valid or not
@@ -231,7 +231,7 @@ function generate_password() {
 
 /**
  * Count a user's posts
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $username Username
  * @return int Number of posts
  */
@@ -248,7 +248,7 @@ function count_user_posts($username) {
 
 /**
  * Count replies in a topic
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $topic Topic ID
  * @return int Replies
  */
@@ -268,8 +268,8 @@ function count_replies($topic) {
 
 /**
  * Find a topic's last post
- * @global mixed $db Database connection
- * @global mixed $strings Language support
+ * @global mixed Database connection
+ * @global mixed Language support
  * @param string $topic Topic ID
  * @param string $format Format of last post
  * @return mixed Topic's last post
@@ -308,7 +308,7 @@ function topic_last_post($topic, $format) {
 
 /**
  * Fetch a topic's author
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $topic Topic ID
  * @return string Username
  */
@@ -326,7 +326,7 @@ function fetch_author($topic) {
 
 /**
  * Fetch a topic's forum
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $topic Topic ID
  * @return mixed Forum details
  */
@@ -346,7 +346,7 @@ function fetch_forum($topic) {
 
 /**
  * Fetch info for a username
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @param string $username Username
  * @return mixed User info
  */
@@ -368,7 +368,7 @@ function fetch_user_info($username) {
 
 /**
  * Validate a username
- * @global mixed $strings Language support
+ * @global mixed Language support
  * @param string $username Username
  */
 function validate_username($username) {
@@ -383,7 +383,7 @@ function validate_username($username) {
 
 /**
  * Validate an email
- * @global mixed $strings Language support
+ * @global mixed Language support
  * @param string $email Email address
  */
 function validate_email($email) {
@@ -395,7 +395,7 @@ function validate_email($email) {
 
 /**
  * Choose a user's title based on their type
- * @global mixed $strings Language support
+ * @global mixed Language support
  * @param int $type User type
  * @return string Language string
  */
@@ -429,9 +429,9 @@ function validate_forum($forum_name) {
 
 /**
  * Cerate a fancy date from a timestamp (e.g. yesterday, 2 mins ago etc.)
- * @global mixed $settings General settings
- * @global int $time Time
- * @global mixed $strings Language support
+ * @global mixed General settings
+ * @global int $time
+ * @global mixed Language support
  * @param string $timestamp Timestamp to format
  * @return string Formatted date
  */
@@ -472,8 +472,8 @@ function fancy_date($timestamp) {
 
 /**
  * Check the database health
- * @global string $database Database filename
- * @global mixed $db Database connection
+ * @global string $database
+ * @global mixed Database connection
  * @global $path Database Path to Monkey Boards
  * @return boolean Topic exists or not
  */
@@ -536,7 +536,7 @@ function make_clickable($text) {
 
 /**
  * Generate site info
- * @global mixed $db Database connection
+ * @global mixed Database connection
  * @return mixed Site info
  */
  function site_info() {
