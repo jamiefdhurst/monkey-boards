@@ -15,7 +15,7 @@ require('functions.inc.php');
 require('config.inc.php');
 
 // Disable all error reporting
-error_reporting(0);
+// error_reporting(0);
 
 // Set global version number
 //$app_version = '0.4';
