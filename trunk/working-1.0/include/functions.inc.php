@@ -430,7 +430,7 @@ function validate_forum($forum_name) {
 /**
  * Cerate a fancy date from a timestamp (e.g. yesterday, 2 mins ago etc.)
  * @global mixed General settings
- * @global int $time
+ * @global int Current time
  * @global mixed Language support
  * @param string $timestamp Timestamp to format
  * @return string Formatted date
@@ -472,9 +472,9 @@ function fancy_date($timestamp) {
 
 /**
  * Check the database health
- * @global string $database
+ * @global string Database location
  * @global mixed Database connection
- * @global $path Database Path to Monkey Boards
+ * @global string Path to Monkey Boards
  * @return boolean Topic exists or not
  */
 function check_health() {
