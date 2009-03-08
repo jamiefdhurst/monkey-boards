@@ -1,0 +1,1379 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class Template_Lite_Compiler</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                    
+                                                                                                            	        [ <a href="../classtrees_default.html">Class Tree: default</a> ]
+            [ <a href="../elementindex_default.html">Index: default</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">default</div>
+		<div id="packageTitle">default</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="packages">
+		Packages:
+					<p><a href="../li_default.html">default</a></p>
+					<p><a href="../li_MonkeyBoards-admin.html">MonkeyBoards-admin</a></p>
+					<p><a href="../li_MonkeyBoards-include.html">MonkeyBoards-include</a></p>
+					<p><a href="../li_MonkeyBoards-include-lang.html">MonkeyBoards-include-lang</a></p>
+					<p><a href="../li_MonkeyBoards-main.html">MonkeyBoards-main</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../default/_include---engine---class.compiler.php.html">		class.compiler.php
+		</a><br>
+			<a href="../default/_include---engine---class.config.php.html">		class.config.php
+		</a><br>
+			<a href="../default/_include---engine---class.template.php.html">		class.template.php
+		</a><br>
+			<a href="../default/_include---config.inc.php.html">		config.inc.php
+		</a><br>
+			<a href="../default/_include---kses.inc.php.html">		kses.inc.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../default/config.html">		config
+		</a><br>
+			<a href="../default/Template_Lite.html">		Template_Lite
+		</a><br>
+			<a href="../default/Template_Lite_Compiler.html">		Template_Lite_Compiler
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: Template_Lite_Compiler</h1>
+	<p style="margin: 0px;">Source Location: /include/engine/class.compiler.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 29]</span></h3>
+	<div id="classTree"><pre><a href="../default/Template_Lite.html">Template_Lite</a>
+   |
+   --Template_Lite_Compiler</pre>
+</div>
+	<div class="small">
+	<p></p>
+		<h4>Author(s):</h4>
+	<ul>
+			</ul>
+	<h4>Version:</h4>
+	<ul>
+			</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+			</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../default/Template_Lite_Compiler.html#var$default_modifiers">$default_modifiers</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$left_delimiter">$left_delimiter</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$php_extract_vars">$php_extract_vars</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$plugins_dir">$plugins_dir</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$reserved_template_varname">$reserved_template_varname</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$right_delimiter">$right_delimiter</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$template_dir">$template_dir</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_confs">$_confs</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_cvar_regexp">$_cvar_regexp</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_db_qstr_regexp">$_db_qstr_regexp</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_dvar_regexp">$_dvar_regexp</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_error_level">$_error_level</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_file">$_file</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_foreachelse_stack">$_foreachelse_stack</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_for_stack">$_for_stack</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_func_regexp">$_func_regexp</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_linenum">$_linenum</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_literal">$_literal</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_mod_regexp">$_mod_regexp</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_php_blocks">$_php_blocks</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_plugins">$_plugins</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_qstr_regexp">$_qstr_regexp</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_require_stack">$_require_stack</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_sectionelse_stack">$_sectionelse_stack</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_si_qstr_regexp">$_si_qstr_regexp</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_sl_md5">$_sl_md5</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_svar_regexp">$_svar_regexp</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_switch_stack">$_switch_stack</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_tag_stack">$_tag_stack</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_templatelite_vars">$_templatelite_vars</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_vars">$_vars</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_var_bracket_regexp">$_var_bracket_regexp</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#var$_var_regexp">$_var_regexp</a></li>
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../default/Template_Lite_Compiler.html#methodTemplate_lite_compiler">Template_lite_compiler</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_compile_compiler_function">_compile_compiler_function</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_compile_config">_compile_config</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_compile_custom_block">_compile_custom_block</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_compile_custom_function">_compile_custom_function</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_compile_file">_compile_file</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_compile_if">_compile_if</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_compile_tag">_compile_tag</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_compile_variable">_compile_variable</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_dequote">_dequote</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_load_filters">_load_filters</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_parse_arguments">_parse_arguments</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_parse_function">_parse_function</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_parse_modifier">_parse_modifier</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_parse_section_prop">_parse_section_prop</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_parse_variable">_parse_variable</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_parse_variables">_parse_variables</a></li>
+				<li><a href="../default/Template_Lite_Compiler.html#method_plugin_exists">_plugin_exists</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+			<div class="indent">
+		<h3>Class: <a href="../default/Template_Lite.html">Template_Lite</a></h3>
+		<div class="small">
+			<dl>
+						<dt>
+				<a href="../default/Template_Lite.html#var$cache">Template_Lite::$cache</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$cache_dir">Template_Lite::$cache_dir</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$cache_lifetime">Template_Lite::$cache_lifetime</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$compile_dir">Template_Lite::$compile_dir</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$config_booleanize">Template_Lite::$config_booleanize</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$config_dir">Template_Lite::$config_dir</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$config_fix_new_lines">Template_Lite::$config_fix_new_lines</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$config_overwrite">Template_Lite::$config_overwrite</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$config_read_hidden">Template_Lite::$config_read_hidden</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$debugging">Template_Lite::$debugging</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$encode_file_name">Template_Lite::$encode_file_name</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$force_compile">Template_Lite::$force_compile</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$_cache_dir">Template_Lite::$_cache_dir</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$_cache_id">Template_Lite::$_cache_id</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$_cache_info">Template_Lite::$_cache_info</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$_compile_obj">Template_Lite::$_compile_obj</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$_config_module_loaded">Template_Lite::$_config_module_loaded</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$_config_obj">Template_Lite::$_config_obj</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$_templatelite_debug_dir">Template_Lite::$_templatelite_debug_dir</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$_templatelite_debug_info">Template_Lite::$_templatelite_debug_info</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$_templatelite_debug_loop">Template_Lite::$_templatelite_debug_loop</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						<dt>
+				<a href="../default/Template_Lite.html#var$_version">Template_Lite::$_version</a>
+			</dt>
+			<dd>
+				 
+			</dd>
+						</dl>
+		</div>
+		</div>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+			<div class="indent">
+		<h3>Class: <a href="../default/Template_Lite.html">Template_Lite</a></h3>
+		<dl class="small">
+						<dt>
+				<a href="../default/Template_Lite.html#methodappend">Template_Lite::append()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodappend_by_ref">Template_Lite::append_by_ref()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodassign">Template_Lite::assign()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodassign_by_ref">Template_Lite::assign_by_ref()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodassign_config">Template_Lite::assign_config()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodclear_all_assign">Template_Lite::clear_all_assign()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodclear_all_cache">Template_Lite::clear_all_cache()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodclear_assign">Template_Lite::clear_assign()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodclear_cache">Template_Lite::clear_cache()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodclear_compiled_tpl">Template_Lite::clear_compiled_tpl()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodclear_config">Template_Lite::clear_config()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodconfig_load">Template_Lite::config_load()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methoddisplay">Template_Lite::display()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodfetch">Template_Lite::fetch()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodget_config_vars">Template_Lite::get_config_vars()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodget_template_vars">Template_Lite::get_template_vars()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodis_cached">Template_Lite::is_cached()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodload_filter">Template_Lite::load_filter()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodregister_block">Template_Lite::register_block()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodregister_compiler">Template_Lite::register_compiler()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodregister_function">Template_Lite::register_function()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodregister_modifier">Template_Lite::register_modifier()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodregister_outputfilter">Template_Lite::register_outputfilter()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodregister_postfilter">Template_Lite::register_postfilter()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodregister_prefilter">Template_Lite::register_prefilter()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodtemplate_exists">Template_Lite::template_exists()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodtrigger_error">Template_Lite::trigger_error()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodunregister_block">Template_Lite::unregister_block()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodunregister_compiler">Template_Lite::unregister_compiler()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodunregister_function">Template_Lite::unregister_function()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodunregister_modifier">Template_Lite::unregister_modifier()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodunregister_outputfilter">Template_Lite::unregister_outputfilter()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodunregister_postfilter">Template_Lite::unregister_postfilter()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#methodunregister_prefilter">Template_Lite::unregister_prefilter()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#method_build_dir">Template_Lite::_build_dir()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#method_destroy_dir">Template_Lite::_destroy_dir()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#method_fetch_compile">Template_Lite::_fetch_compile()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#method_get_dir">Template_Lite::_get_dir()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#method_get_plugin_dir">Template_Lite::_get_plugin_dir()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#method_is_cached">Template_Lite::_is_cached()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#method_rm_dir">Template_Lite::_rm_dir()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#method_run_insert">Template_Lite::_run_insert()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../default/Template_Lite.html#method_run_modifier">Template_Lite::_run_modifier()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+				</dl>
+		</div>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+		<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$default_modifiers"></a>
+	<p></p>
+	<h4>$default_modifiers = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 36]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$left_delimiter"></a>
+	<p></p>
+	<h4>$left_delimiter = <span class="value">&nbsp;&quot;&quot;</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 31]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$php_extract_vars"></a>
+	<p></p>
+	<h4>$php_extract_vars = <span class="value">&nbsp;&nbsp;&nbsp;true</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 38]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$plugins_dir"></a>
+	<p></p>
+	<h4>$plugins_dir = <span class="value">&nbsp;&quot;&quot;</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 33]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$reserved_template_varname"></a>
+	<p></p>
+	<h4>$reserved_template_varname = <span class="value">&nbsp;&quot;&quot;</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 35]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$right_delimiter"></a>
+	<p></p>
+	<h4>$right_delimiter = <span class="value">&nbsp;&quot;&quot;</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 32]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$template_dir"></a>
+	<p></p>
+	<h4>$template_dir = <span class="value">&nbsp;&quot;&quot;</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 34]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_confs"></a>
+	<p></p>
+	<h4>$_confs = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 42]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_cvar_regexp"></a>
+	<p></p>
+	<h4>$_cvar_regexp = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 63]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_db_qstr_regexp"></a>
+	<p></p>
+	<h4>$_db_qstr_regexp = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 57]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_dvar_regexp"></a>
+	<p></p>
+	<h4>$_dvar_regexp = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 62]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_error_level"></a>
+	<p></p>
+	<h4>$_error_level = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 54]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_file"></a>
+	<p></p>
+	<h4>$_file = <span class="value">&nbsp;&nbsp;&nbsp;&quot;&quot;</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 45]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_foreachelse_stack"></a>
+	<p></p>
+	<h4>$_foreachelse_stack = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 47]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_for_stack"></a>
+	<p></p>
+	<h4>$_for_stack = <span class="value">&nbsp;&nbsp;&nbsp;0</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 48]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_func_regexp"></a>
+	<p></p>
+	<h4>$_func_regexp = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 60]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_linenum"></a>
+	<p></p>
+	<h4>$_linenum = <span class="value">&nbsp;&nbsp;&nbsp;0</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 44]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_literal"></a>
+	<p></p>
+	<h4>$_literal = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 46]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_mod_regexp"></a>
+	<p></p>
+	<h4>$_mod_regexp = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 65]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_php_blocks"></a>
+	<p></p>
+	<h4>$_php_blocks = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 53]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_plugins"></a>
+	<p></p>
+	<h4>$_plugins = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 43]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_qstr_regexp"></a>
+	<p></p>
+	<h4>$_qstr_regexp = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 59]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_require_stack"></a>
+	<p></p>
+	<h4>$_require_stack = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 52]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_sectionelse_stack"></a>
+	<p></p>
+	<h4>$_sectionelse_stack = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 49]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_si_qstr_regexp"></a>
+	<p></p>
+	<h4>$_si_qstr_regexp = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 58]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_sl_md5"></a>
+	<p></p>
+	<h4>$_sl_md5 = <span class="value">&nbsp;&nbsp;&nbsp;'39fc70570b8b60cbc1b85839bf242aff'</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 55]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_svar_regexp"></a>
+	<p></p>
+	<h4>$_svar_regexp = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 64]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_switch_stack"></a>
+	<p></p>
+	<h4>$_switch_stack = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 50]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_tag_stack"></a>
+	<p></p>
+	<h4>$_tag_stack = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 51]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_templatelite_vars"></a>
+	<p></p>
+	<h4>$_templatelite_vars = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 67]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_vars"></a>
+	<p></p>
+	<h4>$_vars = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 41]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> Array</p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_var_bracket_regexp"></a>
+	<p></p>
+	<h4>$_var_bracket_regexp = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 61]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_var_regexp"></a>
+	<p></p>
+	<h4>$_var_regexp = <span class="value">&nbsp;&nbsp;&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 66]</p>
+				<p><b>Type:</b> mixed</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+	
+	<a name="methodTemplate_lite_compiler"></a>
+	<p></p>
+	<h3>Template_lite_compiler</h3>
+	<div class="indent">
+		<p>
+		<code>void Template_lite_compiler(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 69]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_compile_compiler_function"></a>
+	<p></p>
+	<h3>_compile_compiler_function</h3>
+	<div class="indent">
+		<p>
+		<code>void _compile_compiler_function(
+
+$function, 
+$arguments, 
+&$_result)</code>
+		</p>
+	
+		<p class="linenumber">[line 400]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$function</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$arguments</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>&$_result</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_compile_config"></a>
+	<p></p>
+	<h3>_compile_config</h3>
+	<div class="indent">
+		<p>
+		<code>void _compile_config(
+
+$variable)</code>
+		</p>
+	
+		<p class="linenumber">[line 814]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$variable</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_compile_custom_block"></a>
+	<p></p>
+	<h3>_compile_custom_block</h3>
+	<div class="indent">
+		<p>
+		<code>void _compile_custom_block(
+
+$function, 
+$modifiers, 
+$arguments, 
+&$_result)</code>
+		</p>
+	
+		<p class="linenumber">[line 433]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$function</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$modifiers</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$arguments</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>&$_result</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_compile_custom_function"></a>
+	<p></p>
+	<h3>_compile_custom_function</h3>
+	<div class="indent">
+		<p>
+		<code>void _compile_custom_function(
+
+$function, 
+$modifiers, 
+$arguments, 
+&$_result)</code>
+		</p>
+	
+		<p class="linenumber">[line 410]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$function</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$modifiers</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$arguments</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>&$_result</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_compile_file"></a>
+	<p></p>
+	<h3>_compile_file</h3>
+	<div class="indent">
+		<p>
+		<code>void _compile_file(
+
+$file_contents)</code>
+		</p>
+	
+		<p class="linenumber">[line 130]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$file_contents</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_compile_if"></a>
+	<p></p>
+	<h3>_compile_if</h3>
+	<div class="indent">
+		<p>
+		<code>void _compile_if(
+
+$arguments, [
+$elseif = false])</code>
+		</p>
+	
+		<p class="linenumber">[line 468]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$arguments</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$elseif</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_compile_tag"></a>
+	<p></p>
+	<h3>_compile_tag</h3>
+	<div class="indent">
+		<p>
+		<code>void _compile_tag(
+
+$tag)</code>
+		</p>
+	
+		<p class="linenumber">[line 207]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$tag</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_compile_variable"></a>
+	<p></p>
+	<h3>_compile_variable</h3>
+	<div class="indent">
+		<p>
+		<code>void _compile_variable(
+
+$variable)</code>
+		</p>
+	
+		<p class="linenumber">[line 719]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$variable</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_dequote"></a>
+	<p></p>
+	<h3>_dequote</h3>
+	<div class="indent">
+		<p>
+		<code>void _dequote(
+
+$string)</code>
+		</p>
+	
+		<p class="linenumber">[line 574]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$string</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_load_filters"></a>
+	<p></p>
+	<h3>_load_filters</h3>
+	<div class="indent">
+		<p>
+		<code>void _load_filters(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 904]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_parse_arguments"></a>
+	<p></p>
+	<h3>_parse_arguments</h3>
+	<div class="indent">
+		<p>
+		<code>void _parse_arguments(
+
+$arguments)</code>
+		</p>
+	
+		<p class="linenumber">[line 581]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$arguments</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_parse_function"></a>
+	<p></p>
+	<h3>_parse_function</h3>
+	<div class="indent">
+		<p>
+		<code>void _parse_function(
+
+$function, 
+$modifiers, 
+$arguments)</code>
+		</p>
+	
+		<p class="linenumber">[line 227]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$function</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$modifiers</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$arguments</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_parse_modifier"></a>
+	<p></p>
+	<h3>_parse_modifier</h3>
+	<div class="indent">
+		<p>
+		<code>void _parse_modifier(
+
+$variable, 
+$modifiers)</code>
+		</p>
+	
+		<p class="linenumber">[line 850]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$variable</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$modifiers</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_parse_section_prop"></a>
+	<p></p>
+	<h3>_parse_section_prop</h3>
+	<div class="indent">
+		<p>
+		<code>void _parse_section_prop(
+
+$section_prop_expr)</code>
+		</p>
+	
+		<p class="linenumber">[line 702]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$section_prop_expr</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_parse_variable"></a>
+	<p></p>
+	<h3>_parse_variable</h3>
+	<div class="indent">
+		<p>
+		<code>void _parse_variable(
+
+$variable)</code>
+		</p>
+	
+		<p class="linenumber">[line 661]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$variable</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_parse_variables"></a>
+	<p></p>
+	<h3>_parse_variables</h3>
+	<div class="indent">
+		<p>
+		<code>void _parse_variables(
+
+$variables, 
+$modifiers)</code>
+		</p>
+	
+		<p class="linenumber">[line 644]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$variables</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$modifiers</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method_plugin_exists"></a>
+	<p></p>
+	<h3>_plugin_exists</h3>
+	<div class="indent">
+		<p>
+		<code>void _plugin_exists(
+
+$function, 
+$type)</code>
+		</p>
+	
+		<p class="linenumber">[line 886]</p>
+				
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$function</b> 
+		- 
+		</li>
+			<li>
+		<span class="type"></span>
+		<b>$type</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 08 Mar 2009 11:00:38 +0000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	</div>
+</div>
+</body>
+</html>
