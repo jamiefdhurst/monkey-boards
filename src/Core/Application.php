@@ -21,7 +21,7 @@ class Application
     const CONFIG_DEFAULT = '.env.default';
 
     const CONTAINER_SERVICES = 'services.yaml';
-    
+
     const PATH_RESOURCES = 'resources/';
 
     /**
