@@ -55,7 +55,7 @@ class Container
      * Call the container's get function.
      *
      * @param string $type
-     * 
+     *
      * @return mixed
      */
     public function get(string $id)

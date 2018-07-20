@@ -13,7 +13,6 @@ namespace Monkey\Core;
 
 use Symfony\Component\Dotenv\Dotenv;
 
-
 /**
  * Application configuration container.
  */
@@ -49,7 +48,6 @@ class Application
 
     public function handleHttpRequest()
     {
-
     }
 
     /**
