@@ -14,7 +14,6 @@ namespace Monkey\Core;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-
 /**
  * Wrap Symfony DependencyInjection.
  */
