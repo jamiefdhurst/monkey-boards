@@ -1,10 +1,10 @@
 <?php
 
-/**
+/*
  * Monkey Boards.
- * 
+ *
  * (c) Jamie Hurst <jamie@jamiehurst.co.uk>
- * 
+ *
  * Copyright and licensing information available at
  * https://github.com/jamiefdhurst/monkey-boards
  */
@@ -55,6 +55,7 @@ class Container
      * Call the container's get function.
      *
      * @param string $type
+     * 
      * @return mixed
      */
     public function get(string $id)
@@ -67,7 +68,7 @@ class Container
      *
      * @return Container
      */
-    public static function getInstance(): Container
+    public static function getInstance(): self
     {
         return static::$instance;
     }

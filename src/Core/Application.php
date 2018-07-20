@@ -1,10 +1,10 @@
 <?php
 
-/**
+/*
  * Monkey Boards.
- * 
+ *
  * (c) Jamie Hurst <jamie@jamiehurst.co.uk>
- * 
+ *
  * Copyright and licensing information available at
  * https://github.com/jamiefdhurst/monkey-boards
  */
@@ -44,7 +44,7 @@ class Application
      */
     public function getPath(): string
     {
-        return __DIR__ . '/../../';
+        return __DIR__.'/../../';
     }
 
     public function handleHttpRequest()
@@ -54,26 +54,22 @@ class Application
 
     /**
      * Load configuration into environment variables.
-     *
-     * @return void
      */
     private function loadConfiguration()
     {
         $config = Dotenv::load(
-            $this->getPath() . static::PATH_RESOURCES . static::CONFIG_DEFAULT
+            $this->getPath().static::PATH_RESOURCES.static::CONFIG_DEFAULT
         );
     }
 
     /**
      * Load the container using the standard services file.
-     *
-     * @return void
      */
     private function loadContainer()
     {
         new Container(
             static::CONTAINER_SERVICES,
-            $this->getPath() . static::PATH_RESOURCES
+            $this->getPath().static::PATH_RESOURCES
         );
     }
 
@@ -82,7 +78,7 @@ class Application
      *
      * @return Application
      */
-    public static function getInstance(): Application
+    public static function getInstance(): self
     {
         if (null === static::$instance) {
             static::$instance = new static();
