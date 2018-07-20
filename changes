@@ -1,9 +1,0 @@
-0.4
-
-* Got search working! ;-)
-* Removed defunct styles; left with simply 'default' only
-* Removed temporary compiled files from 0.3.8 release; stops error
-* Handles error when include/engine/compiled is not writeable
-* Set correct chmod on files (hopefully?)
-* Added some 'cancel' button to various page -> still need to clean this up!
-* Various minor bug fixes and cosmetic errors

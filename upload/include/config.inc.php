@@ -1,1 +1,0 @@
-<?php $database = "include/db-alpha.db"; ?>
