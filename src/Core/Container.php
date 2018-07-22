@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * Monkey Boards.
  *
  * (c) Jamie Hurst <jamie@jamiehurst.co.uk>

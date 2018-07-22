@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * Monkey Boards.
  *
  * (c) Jamie Hurst <jamie@jamiehurst.co.uk>
@@ -19,9 +19,7 @@ use Symfony\Component\Dotenv\Dotenv;
 class Application
 {
     const CONFIG_DEFAULT = '.env.default';
-
     const CONTAINER_SERVICES = 'services.yaml';
-
     const PATH_RESOURCES = 'resources/';
 
     /**
