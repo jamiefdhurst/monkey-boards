@@ -12,6 +12,8 @@
 namespace Monkey\Core;
 
 use Symfony\Component\Dotenv\Dotenv;
+use Symfony\Component\HttpFoundation\Request;
+use Monkey\Core\Exception\ControllerNotFoundException;
 
 /**
  * Application configuration container.
@@ -21,6 +23,16 @@ class Application
     const CONFIG_DEFAULT = '.env.default';
     const CONTAINER_SERVICES = 'services.yaml';
     const PATH_RESOURCES = 'resources/';
+
+    /**
+     * @var Container
+     */
+    private $container;
+
+    /**
+     * @var Router
+     */
+    private $router;
 
     /**
      * @var Application
@@ -34,6 +46,7 @@ class Application
     {
         $this->loadConfiguration();
         $this->loadContainer();
+        $this->loadRouter();
     }
 
     /**
@@ -46,8 +59,20 @@ class Application
         return __DIR__.'/../../';
     }
 
-    public function handleHttpRequest()
+    /**
+     * Handle a given HTTP request, dispatching the router and running the
+     * controller to generate and send a response.
+     *
+     * @param Request $request
+     */
+    public function handleHttpRequest(Request $request = null)
     {
+        if (null === $request) {
+            $request = Request::createFromGlobals();
+        }
+
+        $route = $this->router->match();
+        $this->router->dispatch($route);
     }
 
     /**
@@ -65,10 +90,19 @@ class Application
      */
     private function loadContainer()
     {
-        new Container(
+        $this->container = new Container(
             static::CONTAINER_SERVICES,
             $this->getPath().static::PATH_RESOURCES
         );
+    }
+    
+    /**
+     * Load the router using the container, and initialise it.
+     */
+    private function loadRouter()
+    {
+        $this->router = $this->container->get('core.router');
+        $this->router->load();
     }
 
     /**
