@@ -2,4 +2,5 @@ services:
   
   core.router:
     class: Monkey\Core\Router
+    public: true
     

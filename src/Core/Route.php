@@ -42,10 +42,10 @@ class Route
     private $request;
 
     /**
-     * @param Request $requst
+     * @param Request $request
      * @param array $opts
      */
-    public function __construct(Request $requst, array $opts = [])
+    public function __construct(Request $request, array $opts = [])
     {
         $this->request = $request;
         if (array_key_exists('_controller', $opts)) {

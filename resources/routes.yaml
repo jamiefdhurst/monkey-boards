@@ -1,5 +1,4 @@
 boards:
   path: /
-  defaults: {
-    _controller: 'Monkey\Board\Controller\Public::index'
-  }
+  defaults:
+    _controller: 'Monkey\Board\BoardPublicController::index'

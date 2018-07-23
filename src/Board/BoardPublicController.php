@@ -20,5 +20,6 @@ class BoardPublicController extends Controller
 {
     public function index()
     {
+        return $this->rawResponse('TEST!');
     }
 }

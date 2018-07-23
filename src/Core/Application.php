@@ -23,6 +23,7 @@ class Application
     const CONFIG_DEFAULT = '.env.default';
     const CONTAINER_SERVICES = 'services.yaml';
     const PATH_RESOURCES = 'resources/';
+    const ROUTES_DEFAULT = 'routes.yaml';
 
     /**
      * @var Container
@@ -71,7 +72,7 @@ class Application
             $request = Request::createFromGlobals();
         }
 
-        $route = $this->router->match();
+        $route = $this->router->match($request);
         $this->router->dispatch($route);
     }
 
@@ -80,7 +81,7 @@ class Application
      */
     private function loadConfiguration()
     {
-        $config = Dotenv::load(
+        $config = (new Dotenv())->load(
             $this->getPath().static::PATH_RESOURCES.static::CONFIG_DEFAULT
         );
     }
@@ -102,7 +103,10 @@ class Application
     private function loadRouter()
     {
         $this->router = $this->container->get('core.router');
-        $this->router->load();
+        $this->router->load(
+            $this->getPath().static::PATH_RESOURCES,
+            static::ROUTES_DEFAULT
+        );
     }
 
     /**
