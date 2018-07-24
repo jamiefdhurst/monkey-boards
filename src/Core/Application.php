@@ -11,9 +11,9 @@
 
 namespace Monkey\Core;
 
+use Monkey\Core\Exception\ControllerNotFoundException;
 use Symfony\Component\Dotenv\Dotenv;
 use Symfony\Component\HttpFoundation\Request;
-use Monkey\Core\Exception\ControllerNotFoundException;
 
 /**
  * Application configuration container.
@@ -42,12 +42,23 @@ class Application
 
     /**
      * Set up required application configuration.
+     *
+     * @param Container|null $container
+     * @param Router|null $router
      */
-    public function __construct()
+    public function __construct(?Container $container = null, ?Router $router = null)
     {
         $this->loadConfiguration();
-        $this->loadContainer();
-        $this->loadRouter();
+        if ($container) {
+            $this->container = $container;
+        } else {
+            $this->loadContainer();
+        }
+        if ($router) {
+            $this->router = $router;
+        } else {
+            $this->loadRouter();
+        }
     }
 
     /**
@@ -57,7 +68,7 @@ class Application
      */
     public function getPath(): string
     {
-        return __DIR__.'/../../';
+        return realpath(__DIR__.'/../..').'/';
     }
 
     /**

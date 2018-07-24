@@ -9,12 +9,11 @@
  * https://github.com/jamiefdhurst/monkey-boards
  */
 
-namespace Monkey\Core\Exception;
+namespace Test;
 
-/**
- * When a page is not found.
- */
-class NotFoundException extends \Exception
+use PHPUnit\Framework\TestCase as PHPUnitTestCase;
+
+class TestCase extends PHPUnitTestCase
 {
-    // TODO: Create class based on 404 page.
+    
 }

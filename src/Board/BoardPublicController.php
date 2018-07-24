@@ -20,6 +20,7 @@ class BoardPublicController extends Controller
 {
     public function index()
     {
+        // TODO: Actually return something valid here and get some boards!
         return $this->rawResponse('TEST!');
     }
 }

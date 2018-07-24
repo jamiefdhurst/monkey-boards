@@ -16,4 +16,5 @@ namespace Monkey\Core\Exception;
  */
 class PermissionException extends \Exception
 {
+    // TODO: Create class based on the missing permissions.
 }

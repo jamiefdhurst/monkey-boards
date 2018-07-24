@@ -16,4 +16,5 @@ namespace Monkey\Core\Exception;
  */
 class ControllerNotFoundException extends \Exception
 {
+    // TODO: Create controller based on receiving bad class.
 }
