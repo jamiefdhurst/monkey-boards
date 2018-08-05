@@ -17,6 +17,7 @@ use Monkey\Core\Router;
 use PHPUnit\Framework\MockObject\MockObject;
 use Test\TestCase;
 use Symfony\Component\HttpFoundation\Request;
+use Monkey\Core\Container;
 
 class ApplicationTest extends TestCase
 {
@@ -39,8 +40,18 @@ class ApplicationTest extends TestCase
     {
         $this->mockRoute = $this->createMock(Route::class);
         $this->mockRouter = $this->createMock(Router::class);
+        $mockContainer = $this->createMock(Container::class);
 
-        $this->sut = new Application(null, $this->mockRouter);
+        $this->sut = new Application($mockContainer, $this->mockRouter);
+    }
+
+    public function testStaticInstance()
+    {
+        $sut = Application::getInstance();
+        $this->assertInstanceOf(Application::class, $sut);
+        
+        $secondSut = Application::getInstance();
+        $this->assertEquals($sut, $secondSut);
     }
 
     public function testGetPath()

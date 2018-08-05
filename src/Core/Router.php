@@ -16,6 +16,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Loader\YamlFileLoader;
 use Symfony\Component\Routing\Matcher\UrlMatcher;
 use Symfony\Component\Routing\RequestContext;
+use Monkey\Core\Exception\ControllerNotFoundException;
 use Monkey\Core\Exception\NotFoundException;
 use Monkey\Core\Exception\PermissionException;
 use Monkey\Error\ErrorController;

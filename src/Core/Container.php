@@ -35,10 +35,10 @@ class Container
     /**
      * Load provided services and pre-compile container.
      *
+     * @param string $servicesPath
      * @param string $servicesFile
-     * @param string $basePath
      */
-    public function __construct(string $servicesFile, string $servicesPath)
+    public function __construct(string $servicesPath, string $servicesFile)
     {
         $this->container = new ContainerBuilder();
         $loader = new YamlFileLoader(

@@ -20,13 +20,19 @@ class ErrorController extends Controller
 {
     public function notFoundError()
     {
+        // TODO: Actual response
+        return $this->rawResponse('ERROR!');
     }
 
     public function permissionError()
     {
+        // TODO: Actual response
+        return $this->rawResponse('ERROR!');
     }
 
     public function systemError()
     {
+        // TODO: Actual response
+        return $this->rawResponse('ERROR!');
     }
 }

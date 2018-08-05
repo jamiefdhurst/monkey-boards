@@ -1,1 +1,5 @@
+/build/coverage
+/build/logs
 /vendor/
+.DS_Store
+.vscode

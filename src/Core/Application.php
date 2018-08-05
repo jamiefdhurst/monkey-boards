@@ -103,8 +103,8 @@ class Application
     private function loadContainer()
     {
         $this->container = new Container(
-            static::CONTAINER_SERVICES,
-            $this->getPath().static::PATH_RESOURCES
+            $this->getPath().static::PATH_RESOURCES,
+            static::CONTAINER_SERVICES
         );
     }
     
